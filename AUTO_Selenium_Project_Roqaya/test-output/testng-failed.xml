@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationExerciseSuite]">
+  <test thread-count="5" name="AutomationTests(failed)">
+    <classes>
+      <class name="Tests.TC24">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testDownloadInvoice"/>
+        </methods>
+      </class> <!-- Tests.TC24 -->
+      <class name="Tests.TC23">
+        <methods>
+          <include name="verifyAddressDetails"/>
+          <include name="setupReport"/>
+          <include name="setupBrowser"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- Tests.TC23 -->
+    </classes>
+  </test> <!-- AutomationTests(failed) -->
+</suite> <!-- Failed suite [AutomationExerciseSuite] -->

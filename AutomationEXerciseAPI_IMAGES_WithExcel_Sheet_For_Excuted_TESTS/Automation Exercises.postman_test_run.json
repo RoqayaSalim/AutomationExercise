@@ -1,0 +1,717 @@
+{
+	"id": "5b5ddef2-f81f-4a6d-90aa-3808cca35e35",
+	"name": "Automation Exercises",
+	"timestamp": "2025-05-04T20:47:26.161Z",
+	"collection_id": "40287742-2f84064d-57bd-4f4c-a551-9fabd8c4506d",
+	"folder_id": 0,
+	"environment_id": "40287742-2331272b-95b3-473d-8676-31629f7c6468",
+	"totalPass": 52,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-04T20:47:19.469Z",
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "0877133c-f081-4256-9c3b-f9dbd35ed856",
+			"name": "Get All Products List",
+			"url": "https://automationexercise.com/api/productsList",
+			"time": 1178,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response content type is 'text/html'": true,
+				"Response time is less than 1110ms": false,
+				"Products array should have the correct structure": true,
+				"Each product has a non-negative id, a non-empty name, a valid price, a non-empty brand, and a valid category": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is 'text/html'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1110ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Products array should have the correct structure": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each product has a non-negative id, a non-empty name, a valid price, a non-empty brand, and a valid category": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1178
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response content type is 'text/html'": true,
+					"Response time is less than 1110ms": false,
+					"Products array should have the correct structure": true,
+					"Each product has a non-negative id, a non-empty name, a valid price, a non-empty brand, and a valid category": false
+				}
+			]
+		},
+		{
+			"id": "d9077a96-8196-46f7-bf4c-09e70b1c01aa",
+			"name": "Post all Products List",
+			"url": "https://automationexercise.com/api/productsList",
+			"time": 254,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is 'text/html'": true,
+				"Response has the required fields - responseCode and message": true,
+				"Response time is less than 1120ms": true,
+				"Response code is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'text/html'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1120ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response code is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				254
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is 'text/html'": true,
+					"Response has the required fields - responseCode and message": true,
+					"Response time is less than 1120ms": true,
+					"Response code is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "62ffd8c0-2ae2-412e-ac87-5d8a1655807b",
+			"name": "Get All Brands List",
+			"url": "https://automationexercise.com/api/brandsList",
+			"time": 250,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is text/html": true,
+				"Response time is less than 1120ms": true,
+				"Brands array has the correct structure": true,
+				"Each brand object in the array has an id and brand field": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is text/html": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1120ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Brands array has the correct structure": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each brand object in the array has an id and brand field": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				250
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is text/html": true,
+					"Response time is less than 1120ms": true,
+					"Brands array has the correct structure": true,
+					"Each brand object in the array has an id and brand field": true
+				}
+			]
+		},
+		{
+			"id": "e334fd81-095d-48aa-97d1-fe68d206804b",
+			"name": "PUT To All Brands List",
+			"url": "https://automationexercise.com/api/brandsList",
+			"time": 243,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				243
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ca67e5a6-31a9-43e0-bfb1-46c04b543b65",
+			"name": "Post Search For Products",
+			"url": "https://automationexercise.com/api/searchProduct",
+			"time": 263,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content type is text/html": true,
+				"Response time is less than 2000ms": true,
+				"Response schema contains 'responseCode'": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is text/html": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response schema contains 'responseCode'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				263
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content type is text/html": true,
+					"Response time is less than 2000ms": true,
+					"Response schema contains 'responseCode'": true
+				}
+			]
+		},
+		{
+			"id": "f04be7d5-4721-4a77-8eb3-94405c629264",
+			"name": "POST To Search Product without search_product parameter",
+			"url": "https://automationexercise.com/api/searchProduct",
+			"time": 260,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is 'text/html'": true,
+				"Response time is less than 2000ms": true,
+				"Response has the required fields - responseCode and message": true,
+				"ResponseCode is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'text/html'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ResponseCode is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				260
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is 'text/html'": true,
+					"Response time is less than 2000ms": true,
+					"Response has the required fields - responseCode and message": true,
+					"ResponseCode is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "60da4c91-a82f-4a36-a04d-c1c24b69f798",
+			"name": "POST To Verify Login with valid details",
+			"url": "https://automationexercise.com/api/verifyLogin",
+			"time": 248,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - responseCode and message": true,
+				"Response time is within an acceptable range": true,
+				"Content-Type header is 'application/json'": true,
+				"ResponseCode is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is within an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ResponseCode is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				248
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - responseCode and message": true,
+					"Response time is within an acceptable range": true,
+					"Content-Type header is 'application/json'": true,
+					"ResponseCode is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "3ebdf20b-72e6-4368-a2cc-48585d0dcc46",
+			"name": ": POST To Verify Login without email parameter",
+			"url": "https://automationexercise.com/api/verifyLogin",
+			"time": 255,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Content type is 'text/html; charset=utf-8'": true,
+				"Response has the required fields - responseCode and message": true,
+				"Response code is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is 'text/html; charset=utf-8'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response code is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				255
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Content type is 'text/html; charset=utf-8'": true,
+					"Response has the required fields - responseCode and message": true,
+					"Response code is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "caee3009-61f3-499d-a90a-add55cb20add",
+			"name": "DELETE To Verify Login",
+			"url": "https://automationexercise.com/api/verifyLogin",
+			"time": 262,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is text/html": true,
+				"Response has required fields - responseCode and message": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is text/html": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is text/html": true,
+					"Response has required fields - responseCode and message": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "4e664522-c682-4bd1-bb4b-6279aba72d7a",
+			"name": "POST To Verify Login with invalid details",
+			"url": "https://automationexercise.com/api/verifyLogin",
+			"time": 282,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Content-Type header is 'application/json'": true,
+				"Response has the required fields - responseCode and message": true,
+				"Validate responseCode is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate responseCode is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				282
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Content-Type header is 'application/json'": true,
+					"Response has the required fields - responseCode and message": true,
+					"Validate responseCode is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "e9e96095-f8c4-4c35-8114-a7200a358a2d",
+			"name": "POST To Create/Register User Account",
+			"url": "https://automationexercise.com/api/createAccount",
+			"time": 273,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is 'application/json'": false,
+				"Response time is less than 500ms": true,
+				"Response schema contains required fields - responseCode and message": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'application/json'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response schema contains required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				273
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is 'application/json'": false,
+					"Response time is less than 500ms": true,
+					"Response schema contains required fields - responseCode and message": true
+				}
+			]
+		},
+		{
+			"id": "8931553e-b439-4c2f-b959-59c0d91b8875",
+			"name": "DELETE METHOD To Delete User Account",
+			"url": "https://automationexercise.com/api/deleteAccount",
+			"time": 259,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is 'text/html'": false,
+				"Response schema contains 'responseCode' and 'message' fields": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'text/html'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response schema contains 'responseCode' and 'message' fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				259
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is 'text/html'": false,
+					"Response schema contains 'responseCode' and 'message' fields": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "e7dc68a4-5867-4e30-88bd-75ba998d66e8",
+			"name": "PUT METHOD To Update User Account",
+			"url": "https://automationexercise.com/api/updateAccount",
+			"time": 274,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is 'application/json'": false,
+				"Response time is less than 500ms": true,
+				"Response schema contains required fields - responseCode and message": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'application/json'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response schema contains required fields - responseCode and message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				274
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is 'application/json'": false,
+					"Response time is less than 500ms": true,
+					"Response schema contains required fields - responseCode and message": true
+				}
+			]
+		},
+		{
+			"id": "d5703732-3379-4761-b290-da822e0198d2",
+			"name": "GET user account detail by email",
+			"url": "https://automationexercise.com/api/getUserDetailByEmail?email=roqyasalim@gmail.com ",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Validate the response schema for required fields": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the response schema for required fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				271
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Validate the response schema for required fields": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4572,
+	"collection": {
+		"requests": [
+			{
+				"id": "0877133c-f081-4256-9c3b-f9dbd35ed856",
+				"method": "GET"
+			},
+			{
+				"id": "d9077a96-8196-46f7-bf4c-09e70b1c01aa",
+				"method": "POST"
+			},
+			{
+				"id": "62ffd8c0-2ae2-412e-ac87-5d8a1655807b",
+				"method": "GET"
+			},
+			{
+				"id": "e334fd81-095d-48aa-97d1-fe68d206804b",
+				"method": "PUT"
+			},
+			{
+				"id": "ca67e5a6-31a9-43e0-bfb1-46c04b543b65",
+				"method": "POST"
+			},
+			{
+				"id": "f04be7d5-4721-4a77-8eb3-94405c629264",
+				"method": "POST"
+			},
+			{
+				"id": "60da4c91-a82f-4a36-a04d-c1c24b69f798",
+				"method": "POST"
+			},
+			{
+				"id": "3ebdf20b-72e6-4368-a2cc-48585d0dcc46",
+				"method": "POST"
+			},
+			{
+				"id": "caee3009-61f3-499d-a90a-add55cb20add",
+				"method": "DELETE"
+			},
+			{
+				"id": "4e664522-c682-4bd1-bb4b-6279aba72d7a",
+				"method": "POST"
+			},
+			{
+				"id": "e9e96095-f8c4-4c35-8114-a7200a358a2d",
+				"method": "POST"
+			},
+			{
+				"id": "8931553e-b439-4c2f-b959-59c0d91b8875",
+				"method": "DELETE"
+			},
+			{
+				"id": "e7dc68a4-5867-4e30-88bd-75ba998d66e8",
+				"method": "PUT"
+			},
+			{
+				"id": "d5703732-3379-4761-b290-da822e0198d2",
+				"method": "GET"
+			}
+		]
+	}
+}

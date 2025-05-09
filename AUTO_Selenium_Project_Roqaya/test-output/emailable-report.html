@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">AutomationExerciseSuite</th></tr>
+<tr><td><a href="#t0">AutomationTests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">270,362</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AutomationExerciseSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AutomationTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.TC23</td><td><a href="#m0">verifyAddressDetails</a></td><td rowspan="1">1746797678606</td><td rowspan="1">31224</td></tr><tr class="failedodd"><td rowspan="1">Tests.TC24</td><td><a href="#m1">testDownloadInvoice</a></td><td rowspan="1">1746797715278</td><td rowspan="1">37178</td></tr><tr><th colspan="4">AutomationTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.TC20_SearchAndCartAfterLogin</td><td><a href="#m2">searchAndAddToCartAfterLogin</a></td><td rowspan="1">1746797606560</td><td rowspan="1">20026</td></tr><tr class="passedodd"><td rowspan="1">Tests.TC21</td><td><a href="#m3">addProductToCart</a></td><td rowspan="1">1746797635398</td><td rowspan="1">15726</td></tr><tr class="passedeven"><td rowspan="1">Tests.TC22</td><td><a href="#m4">addRecommendedItemToCart</a></td><td rowspan="1">1746797653635</td><td rowspan="1">19657</td></tr><tr class="passedodd"><td rowspan="1">Tests.TC25</td><td><a href="#m5">testScrollFunctionality</a></td><td rowspan="1">1746797761266</td><td rowspan="1">16020</td></tr><tr class="passedeven"><td rowspan="1">Tests.TC26</td><td><a href="#m6">testScrollWithoutArrow</a></td><td rowspan="1">1746797779761</td><td rowspan="1">15176</td></tr><tr class="passedodd"><td rowspan="1">Tests.TestCase19</td><td><a href="#m7">testBrandPages</a></td><td rowspan="1">1746797562679</td><td rowspan="1">28532</td></tr></tbody>
+</table>
+<h2>AutomationTests</h2><h3 id="m0">Tests.TC23#verifyAddressDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Tests.TC23.verifyAddressDetails(TC23.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.TC24#testDownloadInvoice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: id_gender2 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59759/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66056b939433f55cdbfbea95235685f2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Tests.TC24.testDownloadInvoice(TC24.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.TC20_SearchAndCartAfterLogin#searchAndAddToCartAfterLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.TC21#addProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.TC22#addRecommendedItemToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.TC25#testScrollFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.TC26#testScrollWithoutArrow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.TestCase19#testBrandPages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

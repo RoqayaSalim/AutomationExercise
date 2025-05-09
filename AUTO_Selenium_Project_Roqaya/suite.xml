@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AutomationExerciseSuite">
+    <test name="AutomationTests">
+        <classes>
+            <class name="Tests.TestCase19"/>
+            <class name="Tests.TC20_SearchAndCartAfterLogin"/>
+            <class name="Tests.TC21"/>
+            <class name="Tests.TC22"/>
+            <class name="Tests.TC23"/>
+            <class name="Tests.TC24"/>
+            <class name="Tests.TC25"/>
+            <class name="Tests.TC26"/>
+        </classes>
+    </test>
+</suite>

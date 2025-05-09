@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [AutomationExercise_FullSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="Group1_Tests10-12(failed)">
+    <classes>
+      <class name="Test_Case12">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="homePageVerfication"/>
+          <include name="productsBtnverfiy"/>
+          <include name="addFirstProductToCart"/>
+          <include name="afterTest"/>
+          <include name="addsecondProductToCart"/>
+        </methods>
+      </class> <!-- Test_Case12 -->
+    </classes>
+  </test> <!-- Group1_Tests10-12(failed) -->
+  <test thread-count="1" name="Group2_Tests13-15(failed)">
+    <classes>
+      <class name="Test_Case14">
+        <methods>
+          <include name="enterPaymentDetails"/>
+          <include name="verifyAddressAndReviewOrder"/>
+          <include name="beforeTest"/>
+          <include name="verifyOrderSuccess"/>
+          <include name="afterTest"/>
+          <include name="verifyAccountCreated"/>
+          <include name="clickPayAndConfirm"/>
+          <include name="clickDeleteAccount"/>
+          <include name="AddingProducts"/>
+          <include name="fillSignupDetails"/>
+          <include name="clickRegisterLoginButton"/>
+          <include name="verifyLoggedIn"/>
+          <include name="homePageVerfication"/>
+          <include name="clickProceedToCheckout"/>
+          <include name="enterCommentAndPlaceOrder"/>
+          <include name="clickProceedToCheckoutAgain"/>
+          <include name="verifyAccountDeleted"/>
+          <include name="clickCartButtonAgain"/>
+        </methods>
+      </class> <!-- Test_Case14 -->
+      <class name="Test_Case15">
+        <methods>
+          <include name="clickPayAndConfirm"/>
+          <include name="verifyAddressAndReviewOrder"/>
+          <include name="beforeTest"/>
+          <include name="homePageVerification"/>
+          <include name="verifyOrderSuccess"/>
+          <include name="enterPaymentDetails"/>
+          <include name="verifyLoggedIn"/>
+          <include name="verifyAccountCreated"/>
+          <include name="clickSignupLoginButton"/>
+          <include name="afterTest"/>
+          <include name="fillSignupDetails"/>
+          <include name="enterCommentAndPlaceOrder"/>
+          <include name="clickProceedToCheckout"/>
+          <include name="addProductsToCart"/>
+          <include name="verifyCartPage"/>
+        </methods>
+      </class> <!-- Test_Case15 -->
+    </classes>
+  </test> <!-- Group2_Tests13-15(failed) -->
+  <test thread-count="1" name="Group3_Tests16-18(failed)">
+    <classes>
+      <class name="Test_Case16">
+        <methods>
+          <include name="verifyOrderSuccess"/>
+          <include name="beforeTest"/>
+          <include name="verifyLoggedIn"/>
+          <include name="enterPaymentDetails"/>
+          <include name="clickProceedToCheckout"/>
+          <include name="enterCommentAndPlaceOrder"/>
+          <include name="afterTest"/>
+          <include name="addProductsToCart"/>
+          <include name="verifyAddressAndReviewOrder"/>
+          <include name="clickPayAndConfirm"/>
+          <include name="verifyAccountDeleted"/>
+          <include name="verifyCartPage"/>
+        </methods>
+      </class> <!-- Test_Case16 -->
+      <class name="Test_Case18">
+        <methods>
+          <include name="clickWomenSubcategory"/>
+          <include name="verifyCategoriesVisible"/>
+          <include name="beforeTest"/>
+          <include name="clickWomenCategory"/>
+          <include name="verifyWomenCategoryPage"/>
+          <include name="clickMenSubcategory"/>
+          <include name="afterTest"/>
+          <include name="verifyMenCategoryPage"/>
+          <include name="homePageVerification"/>
+        </methods>
+      </class> <!-- Test_Case18 -->
+      <class name="Test_Case17">
+        <methods>
+          <include name="AddingProducts"/>
+          <include name="beforeTest"/>
+          <include name="checkempty"/>
+          <include name="homePageVerfication"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Test_Case17 -->
+    </classes>
+  </test> <!-- Group3_Tests16-18(failed) -->
+</suite> <!-- Failed suite [AutomationExercise_FullSuite] -->
